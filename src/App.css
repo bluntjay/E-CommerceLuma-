@@ -1,0 +1,346 @@
+html,
+body{
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+*{
+	box-sizing: border-box;
+}
+:root{
+	--offWhite: #F0F0F0;
+	--cartWhite: #F5F5F5;
+	--footWhite: #F4F4F4;
+	--buttBlue: #1B7DC8;
+	--lightDusk: #C79686;
+	--barOrange: #F05910;
+	--darkGrey: #343434;
+	--medGrey: #C9C6C6;
+	--Roboto: 'Roboto', sans-serif;
+	--Monts: 'Montserrat', sans-serif;
+	--PTS: 'PT Serif', serif;
+	--NotoSans: 'Noto Sans', sans-serif;
+}
+.LumaLogo{
+	position: relative;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    background: var(--offWhite);
+    justify-content: center;
+    width: 90vw;
+    height: auto;
+    position: absolute;
+    left: 5%;
+
+    z-index: 10;
+}
+.navBar li{
+	padding:  0.5% 3% 0.5% 3%;
+	list-style: none;
+}
+.navLink{
+	color: #000;
+	cursor: pointer;
+	font-size: 1.5em;
+	font-family: var(--Roboto);
+	font-weight: 700;
+	text-decoration: none;
+
+}
+.navLink:hover{
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid var(--barOrange);
+}
+.active{
+	border-bottom: 3px solid var(--barOrange);
+}
+.homeBlocks{
+	position: relative;
+	margin-top: 5%;
+	display: flex;
+	flex-direction: column;
+   flex-flow: column wrap;
+	width: 90vw;
+	left: 4%;
+}
+.blockImg{
+	filter: brightness(0.9);
+}
+.imageBlocks{
+	padding: 1% 1% 1% 1%;
+	position: relative;
+	display: flex;
+   align-content: flex-start;
+   align-items: center;
+   
+}
+.descripDiv{
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.6);
+	font-family: var(--Monts);
+	color: var(--darkGrey);
+	left: 5%;
+}
+#WomanBeach{
+	width: 90vw;
+	height: 65vh;
+}
+#block1Head{
+	left: 2%;
+	top: 40%;
+}
+.classHead{
+	font-weight: 700;
+}
+#ManBeach{
+	width: 29vw;
+	height: 80vh;
+}
+
+#ColourTshirt{
+	width: 60vw;
+	height: 30vh;
+	
+}
+#teeBlock{
+	position: absolute;
+	left: 0%;
+	
+}
+#YogaMat{
+	width: 30vw;
+    height: 45vh;;
+}
+#matBlock {
+    position: absolute;
+    left: 100%;
+    bottom: 5%;
+}
+#WomenNature{
+	width: 61vw;
+	height: 50vh;
+}
+#natureBlock{
+	position: absolute;
+}
+#FemaleFitness{
+	width: 29vw;
+    height: 97vh;
+
+}
+#femaleBlock{
+	position: relative;
+    top: -47%; 
+    right: 3%;
+
+}
+.yogaButton{
+	height: auto;
+	width: auto;
+	background: var(--buttBlue);
+	border: var(--buttBlue);
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.2em;
+	border-radius: 12px;
+
+}
+.yogaButton:hover{
+	color: var(--offWhite);
+	
+}
+.shopButton{
+	padding-top: 15%;
+	border: none;
+	float: right;
+	text-shadow: 2px 2px 2px 2px #5A5A5A;
+	color: var(--darkGrey);
+	font-weight: 600;
+	background: transparent;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
+}
+.card{
+	width: 20vw;
+	margin-top: 5%;
+	margin-left: 15px;
+}
+.cardTitle{
+	padding-top: 2%;
+	font-weight: 600;
+	text-decoration: underline;
+	font-size: 1.8em;
+	color: var(--darkGrey);
+	font-family: var(--NotoSans);
+
+}
+.cardContent{
+	font-size: 1.3em; 
+	font-weight: 400;
+}
+.center{
+	text-decoration: underline;
+	font-size: 2.3em;
+	font-family: var(--Roboto);
+	color: var(--darkGrey);
+	padding-top: 5%;
+}
+.dealsDiv{
+	margin-top: -20%;
+	text-align: center;
+	justify-content: center;
+	color: var(--darkGrey);
+}
+.hotDeals{
+	text-decoration: underline;
+	font-family: var(--Roboto);
+	font-weight: 600;
+
+}
+.carouselSlide{
+	height: 40vh;
+	width: 20vw;
+
+}
+.cardButton{
+	margin-top: 5%;
+	margin-right: 5%;
+}
+.titleCart{
+	text-decoration: underline;
+	font-family: var(--Mont)
+}
+.collection{
+	list-style: none;
+
+}
+.quantityIcon{
+	margin-left: 15%;
+	transform: scale(3);
+	float: right;
+}
+.removeButt{
+	float: left;
+
+}
+.checkoutButt{
+	margin-left: 20%;
+}
+.checkForm{
+	position: relative;
+    left: 40%;
+}
+.footer{
+	margin-top: 5%;
+	background: var(--medGrey);
+}
+.eachList{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+.footList li{
+	list-style: none;
+
+}
+
+.footerLink{
+	color: var(--darkGrey);
+	list-style: none;
+	font-size: 1.1em;
+	font-family: var(--Roboto);
+	font-weight: 600;
+
+}
+.footerLink:hover{
+	text-decoration: none;
+	border-bottom: 3px solid var(--barOrange);
+	color: var(--darkGrey);
+}
+.searchspan{
+	position: absolute;
+    float: right;
+    top: 15%;
+    right: 5%;
+}
+
+@media (max-width: 800px) {
+.container{
+	flex-direction: column;
+}
+.card{
+	width: auto;
+}
+.carouselSlide{
+	width: 100%; 	
+}
+.cartCon{
+	margin-top: 20%;
+}
+.homeBlocks{
+	width: 50% auto;
+	position: inherit;
+	}
+#femaleBlock,#matBlock,#teeBlock,#natureBlock{
+	display: none;
+}
+}
+
+@media (max-width: 800px) {
+
+.homeBlocks{
+	width: auto;
+	position: relative;
+	}
+#femaleBlock,#matBlock,#teeBlock,#natureBlock{
+	display: none;
+}
+#manBlock{
+	width: 90vw;
+	position: absolute;
+}
+#ManBeach{
+	width: 90vw;
+}
+.descripDiv{
+	position: absolute;
+}
+.dealsDiv{
+	margin-top: 100%;
+	padding-top: 30%;
+}
+.container{
+	flex-direction: column;
+}
+.card{
+	width: auto;
+}
+.carouselSlide{
+	width: 100%; 	
+}
+.cartCon{
+	margin-top: 20%;
+}
+
+}		
+
+@media (max-width: 440px) {
+.container{
+	flex-direction: column;
+}
+.card{
+	width: auto;
+}
+.carouselSlide{
+	width: 100%; 	
+}
+
+}
